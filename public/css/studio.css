@@ -46,14 +46,16 @@ h6 {
 .shoveBottomLeft {
     position: absolute;
     bottom: 0;
-    padding-bottom: 10px;
-    padding-left: 10px;
+    padding-bottom: 20px;
+    padding-left: 20px;
 }
 
 .shoveBottomRight {
     position: absolute;
     bottom: 0;
     right: 0;
+    padding-bottom: 20px;
+    padding-right: 20px;
 }
 
 #section0 p{
@@ -721,6 +723,8 @@ textarea:focus, input:focus {
         padding-left: 5px;
     }
 
+
+
 /*MEDIA QUERIES*/
 
 @media(max-width:768px) {
@@ -756,7 +760,7 @@ textarea:focus, input:focus {
         padding-top: 20px;
     }
     .social-icon {
-        width: 60px;
+        width: 40px;
         padding-right: 5px;
     }
 
@@ -828,6 +832,28 @@ br {
     padding-right: 15px;
 }
 
+.shoveBottomLeft {
+    position: absolute;
+    bottom: 0;
+    padding-bottom: 20px;
+    padding-left: 0px;
+}
+
+.shoveBottomRight {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    
+    }
+}
+
+/*this is intended to stop iphone from zooming when entering text*/
+@media screen and (-webkit-min-device-pixel-ratio:0) { 
+  select,
+  textarea,
+  input {
+    font-size: 16px;
+  }
 }
 /*END OF MEDIA QUERY*/
 
